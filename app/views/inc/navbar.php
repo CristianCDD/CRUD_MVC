@@ -45,17 +45,16 @@
                 </a>
                 <div class="navbar-dropdown is-boxed">
 
-                    <a class="navbar-item" href="<?php echo APP_URL  ?>/userUpdate/">
+                <a class="navbar-item" href="<?php echo APP_URL."userUpdate/".$_SESSION['id']."/"; ?>">
                         Mi cuenta
                     </a>
-                    <a class="navbar-item" href="<?php echo APP_URL  ?>/userPhoto/">
+                    <a class="navbar-item" href="<?php echo APP_URL."userPhoto/".$_SESSION['id']."/"; ?>">
                         Mi foto
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="<?php echo APP_URL  ?>/logOut/" id="btn_exit" >
+                    <a class="navbar-item" href="<?php echo APP_URL."logOut/"; ?>" id="btn_exit" >
                         Salir
                     </a>
-
                 </div>
             </div>
         </div>
