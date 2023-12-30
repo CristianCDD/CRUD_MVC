@@ -90,7 +90,7 @@ class searchController extends mainModel
         $alerta = [
             "tipo" => "redireccionar",
 
-            "url" => APP_URL. $url . "/"
+            "url" => APP_URL.$url. "/"
         ];
         return json_encode($alerta);
     }
