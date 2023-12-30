@@ -34,7 +34,10 @@
         require_once "./app/views/content/".$vista."-view.php";
         }else{
 
-           
+            if((!isset($_SESSION['id']) || $_SESSION['id']=="") || (!isset($_SESSION['usuario']) || $_SESSION['usuario']=="")){
+                $insLogin->cerrarSesionControlador();
+                exit();
+            }
 
              require_once "./app/views/inc/navbar.php";  
             require_once $vista;

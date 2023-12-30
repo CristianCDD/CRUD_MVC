@@ -10,6 +10,8 @@
 
 		if($_POST['modulo_usuario'] == "registrar"){
 			echo $insUsuario->registrarUsuarioControlador();
+		}else if($_POST['modulo_usuario'] == "eliminar"){
+			echo $insUsuario->eliminarUsuarioControlador();
 		}
 
     }else{
