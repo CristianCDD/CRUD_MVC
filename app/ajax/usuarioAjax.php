@@ -12,6 +12,8 @@
 			echo $insUsuario->registrarUsuarioControlador();
 		}else if($_POST['modulo_usuario'] == "eliminar"){
 			echo $insUsuario->eliminarUsuarioControlador();
+		}else if($_POST['modulo_usuario'] == "actualizar"){
+			echo $insUsuario->actualizarUsuarioControlador();
 		}
 
     }else{
