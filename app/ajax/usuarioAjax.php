@@ -14,6 +14,10 @@
 			echo $insUsuario->eliminarUsuarioControlador();
 		}else if($_POST['modulo_usuario'] == "actualizar"){
 			echo $insUsuario->actualizarUsuarioControlador();
+		}else if($_POST['modulo_usuario'] == "actualizarFoto"){
+			echo $insUsuario->actualizarFotoUsuarioControlador();
+		}else if($_POST['modulo_usuario'] == "eliminarFoto"){
+			echo $insUsuario->eliminarFotoUsuarioControlador();
 		}
 
     }else{
